@@ -5,7 +5,8 @@ var promptingPW = function() {
   window.alert("Welcome to BEST PASSWORD GENERATOR 7k! Allow me to assist you today!")
 
   console.log(promptLength)
-  var promptLength = window.prompt("How long would you like your password? Between 8-128")
+  var promptLength = window.prompt("How long would you like your password? Between 8-128 characters")
+    window.alert("Great. We will have a " + promptLength + " character long password")
 
 
   // Upper case confirmation
@@ -38,9 +39,11 @@ var promptingPW = function() {
     } else {
       window.alert("No special characters will be used")
     } 
+
+  window.alert("Please now click the button 'Generate Password'")
 }
 
-document.getElementById("generate").onclick = promptingPW();
+promptingPW();
 
 
 // Get references to the #generate element
@@ -59,40 +62,3 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
-
-
-
-var promptingPW = function() {
-  var promptLength = window.prompt("How long would you like your password? Between 8-128")
-  // Upper case confirmation
-  var confirmUpper = window.confirm ("Would you like your password to have uppercase letters?")
-    if (confirmUpper) {
-      window.alert("Perfect we will include uppercase letters")
-    } else {
-      window.alert("No uppercases will be used")
-    } 
-
-  // Lower case confirmation
-  var confirmLower = window.confirm ("Would you like your password to contain lower case letters?")
-    if (confirmLower) {
-      window.alert("Perfect we will include lowercase letters")
-    } else {
-      window.alert("No lowercases will be used")
-    } 
-
-  //Number Confirmation
-  var confirmNum = window.confirm ("Would you like to have numbers in your password?")
-    if (confirmNum) {
-      window.alert("Perfect we will include Numbers")
-    } else {
-      window.alert("No Numbers will be used")
-    } 
-
-  var confirmSpec = window.confirm ("Would you like to have special characters in your password? ex. @#$%^")
-    if (confirmSpec) {
-      window.alert("Perfect we will include special characters")
-    } else {
-      window.alert("No special characters will be used")
-    } 
-}
-
