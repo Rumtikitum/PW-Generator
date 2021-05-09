@@ -8,7 +8,7 @@
 
 ## Img
 
-   ![](./assets/images/PW-generator.jpg)
+   ![](./assets/images/PW-generator.JPG)
 
 ## Built With...
 
